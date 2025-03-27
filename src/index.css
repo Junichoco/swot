@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 body {
   margin: 0;
@@ -14,4 +12,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.swot-chart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
+}
+.swot-div {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  padding: 6px;
+  border-radius: 5px;
+}
+.swot-div h2 {
+  text-align: center;
 }
