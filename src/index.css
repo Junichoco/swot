@@ -14,6 +14,22 @@ code {
     monospace;
 }
 
+#top-header{
+  background: linear-gradient(8deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  text-align: center;
+  color: white;
+  padding: 10px 0 10px 0;
+}
+
+.swot-header{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px 0 10px 0;
+  /* align-items: flex-end; */
+  /* text-align: center; */
+}
+
 .swot-chart {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -23,7 +39,47 @@ code {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
   padding: 6px;
   border-radius: 5px;
+
+  /* position: relative; */
 }
 .swot-div h2 {
   text-align: center;
+}
+.swot-div p {
+  font-size: medium;
+}
+
+.swot-item {
+  display: flex;
+  border: none;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.item-buttons{
+  display: flex;
+  position: absolute;
+  bottom: -8px;
+  right: -10px;
+}
+
+.title-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  background-color: #9900FF;
+  border-radius: 5px;
+  color: white;
+  padding: 2px 6px 2px 6px;
+  font-size: small;
+  margin-right: 6px;
+
+  transition: all 0.3s;
+}
+.title-btn:hover {
+  background-color: #6200A3;
+  cursor: pointer;
+
+  transition: all 0.3s;
 }
