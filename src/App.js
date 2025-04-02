@@ -12,6 +12,8 @@ import Box from "./Components/Box";
 function App() {
   const [ title, SetTitle ] = useState("Enter title here");
   const titleButtonRef = useRef(null);
+  const darkRed = "#E00000";
+  const darkBlue = "#000AC7";
 
   const editTitle = () => {
     const newTitle = prompt('Enter a new title:');
@@ -53,19 +55,19 @@ function App() {
         <div className="swot-chart">
           <Box
             title="Strengths"
-            color="blue"
+            color={darkBlue}
           />
           <Box
             title="Weaknesses"
-            color="red"
+            color={darkRed}
           />
           <Box
             title="Opportunities"
-            color="blue"
+            color={darkBlue}
           />
           <Box
             title="Threats"
-            color="red"
+            color={darkRed}
           />
         </div>
       </Row>

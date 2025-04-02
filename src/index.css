@@ -1,5 +1,3 @@
-
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -28,6 +26,9 @@ code {
   padding: 10px 0 10px 0;
   /* align-items: flex-end; */
   /* text-align: center; */
+}
+.swot-header h2 {
+  font-size: 2.5rem;
 }
 
 .swot-chart {
