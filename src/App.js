@@ -22,14 +22,6 @@ function App() {
     }
   }
 
-  const showTitleButton = () => {
-    // console.log(titleButtonRef);
-    titleButtonRef.current.classList.remove("d-none");
-  }
-  const hideTitleButton = () => {
-    titleButtonRef.current.classList.add("d-none");
-  }
-
   return (
     <Container>
       <Row
@@ -44,15 +36,13 @@ function App() {
         <div id="top-header">
           SWOT Analysis
         </div>
-        <div className="swot-header" onMouseOver={() => showTitleButton()} onMouseOut={() => hideTitleButton()}>
+        <div className="swot-header">
           <div style={{display: "flex", position: "relative", padding: "0px 50px 0px 50px"}}>
-            <h2>{title}</h2>
-              <div className="title-btn d-none" ref={titleButtonRef} onClick={() => editTitle()} >
-                Edit
-              </div>
+            <h2 id="swot-title" onClick={() => editTitle()}>{title}</h2>
           </div>
         </div>
         <div className="swot-chart">
+
           <Box
             title="Strengths"
             color={darkBlue}

@@ -12,11 +12,20 @@ code {
     monospace;
 }
 
+
+
 #top-header{
   background: linear-gradient(8deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   text-align: center;
   color: white;
   padding: 10px 0 10px 0;
+}
+
+#swot-title {
+  cursor: pointer;
+}
+#swot-title:hover {
+  background-color: #DFF2F6;
 }
 
 .swot-header{
@@ -48,20 +57,22 @@ code {
 }
 .swot-div p {
   font-size: medium;
+  margin-bottom: 0;
 }
 
 .swot-item {
   display: flex;
-  border: none;
+  justify-content: space-between;
   position: relative;
   word-wrap: break-word;
 }
 
-.item-buttons{
-  display: flex;
-  position: absolute;
-  bottom: -8px;
-  right: -10px;
+.swot-item-point{
+  flex: 1 0 auto;
+  cursor: pointer;
+}
+.swot-item-point:hover {
+  background-color: #DFF2F6;
 }
 
 .title-btn {

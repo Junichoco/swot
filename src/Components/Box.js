@@ -3,7 +3,10 @@ import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import ListGroup from "react-bootstrap/ListGroup";
-import ReactDOM from "react-dom/client";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPencil, faSquareXmark } from '@fortawesome/free-solid-svg-icons'
+
 
 class Box extends Component {
   constructor(props) {
@@ -69,25 +72,19 @@ class Box extends Component {
           <ListGroup>
             {this.state.list.map((item, index) => {
               return(
-                <ListGroup.Item>
+                <ListGroup.Item style={{padding:"6px"}}>
                   <div key={index} className="swot-item">
-                    <p>{item.value}</p>
-                    <div id={`buttons-${title}-${index}`} className="item-buttons">
-                      <Button
+                    <div className="swot-item-point" onClick={() => this.editItem(index)}>
+                      <p>{item.value}</p>
+                      {/* <div id={`buttons-${title}-${index}`} className="item-buttons">
+                      </div> */}
+                    </div>
+                    <Button
                       className="item-btn"
                       style={{fontSize:"small", padding:"2px 5px 2px 5px"}}
                       onClick={() => this.deleteItem(item.id)}>
-                        {/* <i class="fa-solid fa-square-xmark"></i> */}
-                        Delete
-                      </Button>
-                      <Button
-                      className="item-btn"
-                      style={{fontSize:"small", padding:"2px 5px 2px 5px"}}
-                      onClick={() => this.editItem(index)}>
-                        {/* <i class="fa-solid fa-pencil"></i> */}
-                        Edit
-                      </Button>
-                    </div>
+                        <FontAwesomeIcon icon={faSquareXmark} />
+                    </Button>
                   </div>
                 </ListGroup.Item>
               )
