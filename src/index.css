@@ -68,8 +68,12 @@ code {
 }
 
 .swot-item-point{
-  flex: 1 0 auto;
+  /* flex: 1 0 auto; */
   cursor: pointer;
+}
+.swot-item-point p {
+  word-wrap: break-word;
+
 }
 .swot-item-point:hover {
   background-color: #DFF2F6;
@@ -94,4 +98,10 @@ code {
   cursor: pointer;
 
   transition: all 0.3s;
+}
+
+@media (max-width: 991px) {
+  .swot-chart {
+    grid-template-columns: 1fr;
+  }
 }

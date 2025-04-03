@@ -79,12 +79,12 @@ class Box extends Component {
                       {/* <div id={`buttons-${title}-${index}`} className="item-buttons">
                       </div> */}
                     </div>
-                    <Button
-                      className="item-btn"
-                      style={{fontSize:"small", padding:"2px 5px 2px 5px"}}
-                      onClick={() => this.deleteItem(item.id)}>
-                        <FontAwesomeIcon icon={faSquareXmark} />
-                    </Button>
+                      <Button
+                        className="item-btn"
+                        style={{fontSize:"small", padding:"2px 5px 2px 5px"}}
+                        onClick={() => this.deleteItem(item.id)}>
+                          <FontAwesomeIcon icon={faSquareXmark} />
+                      </Button>
                   </div>
                 </ListGroup.Item>
               )
